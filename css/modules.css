@@ -1,0 +1,228 @@
+@charset "UTF-8";
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.125em;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+}
+
+body {
+  color: #333;
+  background: #fff;
+  font: 1rem/1.2 "TT Chocolates", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.gm-style img {
+  max-width: none;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+  font-family: inherit;
+  font-weight: bold;
+  margin: 0 0 0.5em;
+  color: inherit;
+}
+
+h1, .h1 {
+  font-size: 50px;
+}
+
+h2, .h2 {
+  font-size: 30px;
+}
+
+h3, .h3 {
+  font-size: 38px;
+}
+
+h4, .h4 {
+  font-size: 34px;
+}
+
+h5, .h5 {
+  font-size: 14px;
+}
+
+h6, .h6 {
+  font-size: 14px;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: #0047ff;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: .15em;
+  padding: .5em;
+  min-width: 280px;
+}
+
+input[type='text']:hover,
+input[type='tel']:hover,
+input[type='email']:hover,
+input[type='search']:hover,
+input[type='password']:hover,
+textarea:hover {
+  border-color: #426BD3;
+}
+
+input[type='text']:focus, input[type='text']:active,
+input[type='tel']:focus,
+input[type='tel']:active,
+input[type='email']:focus,
+input[type='email']:active,
+input[type='search']:focus,
+input[type='search']:active,
+input[type='password']:focus,
+input[type='password']:active,
+textarea:focus,
+textarea:active {
+  border-color: #27AE60;
+}
+
+input[type='text']::-webkit-input-placeholder,
+input[type='tel']::-webkit-input-placeholder,
+input[type='email']::-webkit-input-placeholder,
+input[type='search']::-webkit-input-placeholder,
+input[type='password']::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #58595b;
+}
+
+input[type='text']::-moz-placeholder,
+input[type='tel']::-moz-placeholder,
+input[type='email']::-moz-placeholder,
+input[type='search']::-moz-placeholder,
+input[type='password']::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  color: #58595b;
+}
+
+input[type='text']:-moz-placeholder,
+input[type='tel']:-moz-placeholder,
+input[type='email']:-moz-placeholder,
+input[type='search']:-moz-placeholder,
+input[type='password']:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #58595b;
+}
+
+input[type='text']:-ms-input-placeholder,
+input[type='tel']:-ms-input-placeholder,
+input[type='email']:-ms-input-placeholder,
+input[type='search']:-ms-input-placeholder,
+input[type='password']:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #58595b;
+}
+
+input[type='text'].placeholder,
+input[type='tel'].placeholder,
+input[type='email'].placeholder,
+input[type='search'].placeholder,
+input[type='password'].placeholder,
+textarea.placeholder {
+  color: #58595b;
+}
+
+select {
+  -webkit-border-radius: 0;
+}
+
+textarea {
+  resize: vertical;
+  vertical-align: top;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  cursor: pointer;
+}
+
+/*
+Buttons
+
+Модуль кнопки для сайта
+
+Markup:
+<button class="btn">Кнопка</button>
+
+Styleguide Buttons
+*/
+.btn {
+  padding: .5em .8em;
+  line-height: 17px;
+  font-weight: 600;
+  font-size: .8rem;
+  border-radius: .15em;
+  color: #fff;
+}
